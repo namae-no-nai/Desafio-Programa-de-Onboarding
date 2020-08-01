@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require_relative '../../../lib/models/state.rb'
+require_relative '../../lib/models/state.rb'
 require 'spec_helper'
 
 describe State do
-  file = 'spec/file_parser/populacao_2019.csv'
+  file = 'data/populacao_2019.csv'
   state = State.new(file)
 
   it 'should get general Ranking for SP ' do
-    json = File.read('spec/file_parser/uf_ranking_json/general.json')
+    json = File.read('spec/uf_ranking_json/general.json')
     response = JSON.parse(json)
     stub_request(:get, 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=35').to_return(status: 200, body: json)
 

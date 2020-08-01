@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require_relative '../../../lib/models/city.rb'
+require_relative '../../lib/models/city.rb'
 require 'spec_helper'
 
 describe City do
-  file = 'spec/file_parser/populacao_2019.csv'
+  file = 'data/populacao_2019.csv'
   city = City.new(file)
 
   it 'should get ranking for woman in São Paulo (SP)' do
-    json = File.read('spec/file_parser/uf_ranking_json/woman.json')
+    json = File.read('spec/uf_ranking_json/woman.json')
     response = JSON.parse(json)
     stub_request(:get, 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=3550308&sexo=F').to_return(status: 200, body: json)
 
@@ -20,7 +20,7 @@ describe City do
   end
 
   it 'should get the ranking for man in São Paulo (SP)' do
-    json = File.read('spec/file_parser/uf_ranking_json/man.json')
+    json = File.read('spec/uf_ranking_json/man.json')
     response = JSON.parse(json)
     stub_request(:get, 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=3550308&sexo=M').to_return(status: 200, body: json)
 
