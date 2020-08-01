@@ -4,8 +4,6 @@ require 'csv'
 require 'net/http'
 require 'json'
 
-URL = 'https://servicodados.ibge.gov.br/api/v2/censos/'
-
 # States Repository
 class State
   def initialize(cvs_file)
@@ -33,9 +31,9 @@ class State
 
   def url_check(id, sex)
     if sex.nil?
-      URL + "nomes/ranking?localidade=#{id}"
+      @url + "nomes/ranking?localidade=#{id}"
     else
-      URL + "nomes/ranking?localidade=#{id}&sexo=#{sex}"
+      @url + "nomes/ranking?localidade=#{id}&sexo=#{sex}"
     end
   end
 end

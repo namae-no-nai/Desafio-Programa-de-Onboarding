@@ -9,7 +9,7 @@ describe City do
     expect(uf.all_cities.class).to eq Hash
   end
 
-  it 'should have 27 elements' do
+  it 'should have 5570 elements' do
     uf = City.new('spec/file_parser/populacao_2019.csv')
     expect(uf.all_cities.length).to eq 5570
   end
@@ -17,6 +17,6 @@ describe City do
   it 'first and last should be' do
     uf = City.new('spec/file_parser/populacao_2019.csv')
     expect(uf.all_cities.first).to eq ['Alta Floresta D\'Oeste (RO)', '1100015']
-    expect(uf.all_cities["Brasília (DF)"]).to eq "5300108"
+    expect(uf.all_cities['Brasília (DF)']).to eq '5300108'
   end
 end

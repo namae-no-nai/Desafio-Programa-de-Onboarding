@@ -1,0 +1,108 @@
+[
+  {
+    "localidade": "3550308",
+    "sexo": "f",
+    "res": [
+      {
+        "nome": "MARIA",
+        "frequencia": 578712,
+        "ranking": 1
+      },
+      {
+        "nome": "ANA",
+        "frequencia": 163620,
+        "ranking": 2
+      },
+      {
+        "nome": "JULIANA",
+        "frequencia": 45103,
+        "ranking": 3
+      },
+      {
+        "nome": "FERNANDA",
+        "frequencia": 42818,
+        "ranking": 4
+      },
+      {
+        "nome": "MARCIA",
+        "frequencia": 42567,
+        "ranking": 5
+      },
+      {
+        "nome": "ADRIANA",
+        "frequencia": 41393,
+        "ranking": 6
+      },
+      {
+        "nome": "PATRICIA",
+        "frequencia": 40845,
+        "ranking": 7
+      },
+      {
+        "nome": "CAMILA",
+        "frequencia": 38842,
+        "ranking": 8
+      },
+      {
+        "nome": "SANDRA",
+        "frequencia": 38409,
+        "ranking": 9
+      },
+      {
+        "nome": "JULIA",
+        "frequencia": 37080,
+        "ranking": 10
+      },
+      {
+        "nome": "BEATRIZ",
+        "frequencia": 36865,
+        "ranking": 11
+      },
+      {
+        "nome": "GABRIELA",
+        "frequencia": 35404,
+        "ranking": 12
+      },
+      {
+        "nome": "ALINE",
+        "frequencia": 34534,
+        "ranking": 13
+      },
+      {
+        "nome": "BRUNA",
+        "frequencia": 33839,
+        "ranking": 14
+      },
+      {
+        "nome": "RENATA",
+        "frequencia": 32525,
+        "ranking": 15
+      },
+      {
+        "nome": "AMANDA",
+        "frequencia": 32068,
+        "ranking": 16
+      },
+      {
+        "nome": "MARIANA",
+        "frequencia": 31960,
+        "ranking": 17
+      },
+      {
+        "nome": "LETICIA",
+        "frequencia": 31663,
+        "ranking": 18
+      },
+      {
+        "nome": "VANESSA",
+        "frequencia": 31357,
+        "ranking": 19
+      },
+      {
+        "nome": "LUCIANA",
+        "frequencia": 31305,
+        "ranking": 20
+      }
+    ]
+  }
+]
