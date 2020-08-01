@@ -8,7 +8,7 @@ describe State do
   state = State.new(file)
 
   it 'should get general Ranking for SP ' do
-    json = File.read('spec/file_parser/uf_ranking_json/uf_ranking/general.json')
+    json = File.read('spec/file_parser/uf_ranking_json/general.json')
     response = JSON.parse(json)
     stub_request(:get, 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=35').to_return(status: 200, body: json)
 

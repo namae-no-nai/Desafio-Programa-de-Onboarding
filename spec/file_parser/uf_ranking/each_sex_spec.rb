@@ -8,7 +8,7 @@ describe State do
   state = State.new(file)
 
   it 'should get ranking most used names for woman in SP ' do
-    json = File.read('spec/file_parser/uf_ranking_json/uf_ranking/woman.json')
+    json = File.read('spec/file_parser/uf_ranking_json/woman.json')
     response = JSON.parse(json)
     stub_request(:get, 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=35&sexo=F').to_return(status: 200, body: json)
 
@@ -20,7 +20,7 @@ describe State do
   end
 
   it 'should get ranking most used names for man in SP' do
-    json = File.read('spec/file_parser/uf_ranking_json/uf_ranking/man.json')
+    json = File.read('spec/file_parser/uf_ranking_json/man.json')
     response = JSON.parse(json)
     stub_request(:get, 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=35&sexo=M').to_return(status: 200, body: json)
 
