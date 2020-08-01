@@ -11,7 +11,7 @@ class Name
 
   def ranking(nome)
     formated_name = nome.gsub(',', '%7C').gsub(' ', '')
-    exit unless formated_name.ascii_only?
+    exit unless formated_name.ascii_only? && nome.nil?
     url = @url + formated_name
     uri = URI(url)
     response = Net::HTTP.get(uri)

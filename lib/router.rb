@@ -25,7 +25,7 @@ class Router
     case action
     when 1 then @controller.list
     when 2 then @controller.ask_city
-    when 3 then @controller.something
+    when 3 then @controller.ask_name
     when 4 then stop
 
     else
